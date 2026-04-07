@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .projects-grid {
+            display: grid;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .project {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .project p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .project {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Привет! Меня зовут Юрий</h1>
+            <p class="subtitle">Python-разработчик. Вот мои проекты и резюме</p>
+        </header>
+
+        <div class="projects-grid">
+            <!-- Резюме — первый проект -->
+            <div class="project">
+                <h2>📝 Резюме</h2>
+                <p>Моё резюме с опытом работы, навыками и достижениями. Здесь вы найдёте информацию о моём профессиональном пути и компетенциях.</p>
+                <a href="https://github.com/semenbakin412
+/my-resume" class="btn" target="_blank">Смотреть резюме</a>
+            </div>
+
+            <!-- Конвертер валют -->
+            <div class="project">
+                <h2>💱 Конвертер валют</h2>
+                <p>Приложение для управления бюджетом в поездках за границей. Позволяет быстро конвертировать суммы между разными валютами с актуальными курсами.</p>
+                <a href="https://github.com/semenbakin412
+/currency-converter" class="btn" target="_blank">Смотреть код проекта</a>
+            </div>
+
+            <!-- Умный текстовый помощник -->
+            <div class="project">
+                <h2>🤖 Умный текстовый помощник</h2>
+                <p>Помощник на Python, который использует наиболее подходящие нейросети для решения рутинных задач. Автоматизирует написание текстов, анализ данных и другие операции.</p>
+                <a href="https://github.com/semenbakin412
+/smart-assistant" class="btn" target="_blank">Смотреть код проекта</a>
+            </div>
+
+            <!-- Система бронирования -->
+            <div class="project">
+                <h2>🍽️ Система бронирования</h2>
+                <p>Приложение бронирования столиков в ресторане с проверкой доступности, используя базу данных PostgreSQL. Включает интерфейс для администратора и клиентов.</p>
+                <a href="https://github.com/semenbakin412
+/booking-system" class="btn" target="_blank">Смотреть код проекта</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Контакты: <a href="mailto:semenbakin412
+" style="color: white;">semenbakin412
+</a></p>
+            <p style="margin-top: 10px;">© 2024 semenbakin412
+. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
